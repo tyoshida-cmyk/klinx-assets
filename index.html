@@ -7,20 +7,27 @@
 <link rel="icon" type="image/png" href="klinx-icon-180.png">
 <link rel="apple-touch-icon" href="klinx-icon-180.png">
 <link rel="manifest" href="manifest.json">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="KLINX">
 <meta name="theme-color" content="#0F1E33">
 <style>
-  html,body{margin:0;padding:0;height:100%;background:#0F1E33;overflow:hidden}
-  #app-frame{position:fixed;inset:0;border:0;width:100%;height:100%}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,'Hiragino Sans','Yu Gothic',sans-serif;background:#0F1E33;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px;gap:20px}
+  .logo{width:92px;height:92px}
+  .brand{font-size:30px;font-weight:800;letter-spacing:.04em}
+  .brand .x{color:#4F8BFF}
+  .sub{font-size:11px;color:#7C8AA5;letter-spacing:.2em;text-transform:uppercase;margin-top:4px}
+  .open-btn{display:inline-block;margin-top:6px;background:#4F8BFF;color:#fff;text-decoration:none;font-size:17px;font-weight:700;padding:15px 42px;border-radius:12px;box-shadow:0 8px 24px rgba(79,139,255,.35)}
+  .open-btn:active{opacity:.85}
+  .note{font-size:12px;color:#94a3b8;line-height:1.8;max-width:300px;margin-top:6px}
 </style>
 </head>
 <body>
-<iframe id="app-frame"
-  src="https://script.google.com/a/macros/kashimura-holdings.co.jp/s/AKfycbwQRXrKLqFLeDgPeNU58P0EKvmfZp_oJQRyAu8cxjHZTavaMr9EW4Phwqp1V34p60UV/exec"
-  allow="clipboard-write; fullscreen"
-  referrerpolicy="origin"></iframe>
+  <img class="logo" src="klinx-icon-180.png" alt="KLINX">
+  <div>
+    <div class="brand">KLIN<span class="x">X</span></div>
+    <div class="sub">Employee Management</div>
+  </div>
+  <a class="open-btn" href="https://script.google.com/a/macros/kashimura-holdings.co.jp/s/AKfycbwQRXrKLqFLeDgPeNU58P0EKvmfZp_oJQRyAu8cxjHZTavaMr9EW4Phwqp1V34p60UV/exec">KLINX を開く →</a>
+  <div class="note">このページを「ホーム画面に追加」すると、KLINXアイコンで起動できます（共有ボタン →「ホーム画面に追加」）。</div>
 </body>
 </html>
